@@ -22,8 +22,8 @@ const Modal = () => {
       window.location.reload();
       setError('');
     } catch (err) {
-      setError('Oops, incorrect credentials.');
-    }
+      setError('Ups, krivo ime ili lozinka. ');
+    } 
   };
 
   return (
@@ -35,7 +35,7 @@ const Modal = () => {
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
           <div align="center">
             <button type="submit" className="button">
-              <span>Start chatting</span>
+              <span>Započni chat</span>
             </button>
           </div>
         </form>
